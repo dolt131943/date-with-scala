@@ -1,0 +1,12 @@
+
+//build.sbt
+//用于操作SWF文件
+
+name := "swftest"
+
+version := "1.0"
+
+//注意：针对找不到com.adobe.**的包，添加下面这个库
+resolvers += "flex-mojos-plugin-repository" at "http://repository.sonatype.org/content/groups/flexgroup"
+
+libraryDependencies += "com.googlecode.apparat" % "apparat-core" % "1.0-RC9"
